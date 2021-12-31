@@ -1,11 +1,13 @@
 module.exports = {
   reactStrictMode: true,
   async rewrites() {
-    return [
-      {
-        source: '/api/download/:id',
-        destination: '/api/attachment/:id',
-      },
-    ]
+    return {
+      beforeFiles: [
+        {
+          source: '/api/download/:id',
+          destination: '/api/attachment/[id].js',
+        },
+      ]
+    }
   },
 }
