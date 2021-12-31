@@ -3,8 +3,8 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/api/download/:id*',
-        destination: '/pages/api/download/:id*',
+        source: '/api/download/:id',
+        destination: '/pages/api/download/:id',
       },
     ]
   },
