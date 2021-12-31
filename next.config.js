@@ -2,7 +2,7 @@ module.exports = {
   reactStrictMode: true,
   async rewrites() {
     return {
-      beforeFiles: [
+      fallback: [
         {
           source: '/api/download/:id',
           destination: '/api/attachment/[id].js',
