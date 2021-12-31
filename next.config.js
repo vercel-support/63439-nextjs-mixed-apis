@@ -4,7 +4,7 @@ module.exports = {
     return [
       {
         source: '/api/download/:id',
-        destination: '/pages/api/download/[id]',
+        destination: '/pages/api/download/[id].js',
       },
     ]
   },
