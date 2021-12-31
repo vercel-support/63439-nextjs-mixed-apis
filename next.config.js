@@ -5,7 +5,7 @@ module.exports = {
       afterFiles: [
         {
           source: '/api/download/:id',
-          destination: '/pages/api/download/[id].js',
+          destination: '/api/download/[id]',
         },
       ]
     }
